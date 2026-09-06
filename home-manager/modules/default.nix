@@ -5,6 +5,7 @@
   	./waybar
   	./appearance
   	./rofi
+  	./vscoduim
     ./git.nix
     ./zsh.nix
     ./starship.nix
