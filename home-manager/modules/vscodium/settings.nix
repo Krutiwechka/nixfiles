@@ -1,5 +1,5 @@
 {
-	programs.vscode.profiles.default.userSettings = {
+	programs.vscodium.profiles.default.userSettings = {
       # font
       "editor.fontFamily" = "FiraCode Nerd Font";
 

@@ -1,6 +1,6 @@
 {pkgs, ...}:
 {
-	programs.vscode.profiles.default.extensions = with pkgs.vscode-extensions; [
+	programs.vscodium.profiles.default.extensions = with pkgs.vscode-extensions; [
 		adpyke.codesnap
 		dracula-theme.theme-dracula
 		eamodio.gitlens

@@ -4,5 +4,5 @@
 		./keybinds.nix
 		./settings.nix		
 	];
-	programs.vscode.enable = true;
+	programs.vscodium.enable = true;
 }
