@@ -24,7 +24,7 @@
       	tt = "trans :en";
 
       	shut = "shutdown now";
-
+		hib = "sudo systemctl hibernate";
       	newyear = "bash ~/Downloads/hy.sh";
 		cdd = "cd ${config.home.homeDirectory}/.dotfiles";
 		pkgs = "micro ${config.home.homeDirectory}/.dotfiles/home-manager/pkgs.nix";
