@@ -1,7 +1,7 @@
+{pkgs, ...}:
 {
 	programs.vscode.profiles.default.extensions = with pkgs.vscode-extensions; [
 		adpyke.codesnap
-		dlasagno.wal-theme
 		dracula-theme.theme-dracula
 		eamodio.gitlens
 		pkief.material-product-icons

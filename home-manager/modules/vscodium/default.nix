@@ -1,7 +1,8 @@
 {
 	imports = [
-		extensions.nix
-		keybinds.nix	
+		./extensions.nix
+		./keybinds.nix
+		./settings.nix		
 	];
 	programs.vscode.enable = true;
 }
