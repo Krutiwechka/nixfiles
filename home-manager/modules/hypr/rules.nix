@@ -1,13 +1,14 @@
+{lib, ...}:
 {
 	wayland.windowManager.hyprland.settings = {
     	window_rule = [
-    		{
-    			match.class = "thunar";
-    			float = true;
-    			pin = true;
-    			size = "1000 800";
-    			center = true;
-    		}
+#    		{
+#    			match.class = "thunar";
+#    			float = true;
+#    			pin = true;
+#    			size = "1000 800";
+#    			center = true;
+#    		}
     		{
     			match.class = ".*";
     			suppress_event = "maximize";
@@ -58,6 +59,22 @@
 				match.namespace = "^rofi$";
 				blur = true;
 			}
+    	];
+    	on = [
+    	      {
+    	        _args = [
+    	          "window.open"
+    	          (lib.generators.mkLuaInline ''
+    	            function(w)
+    	              if w.class == "thunar" or w.class == "Thunar" then
+    	                hl.dispatch(hl.dsp.window.float({ action = "set", window = w }))
+    	                hl.dispatch(hl.dsp.window.resize({ x = 1000, y = 800, window = w }))
+    	                hl.dispatch(hl.dsp.window.center({ window = w }))
+    	              end
+    	            end
+    	          '')
+    	  ];
+    	 }
     	];
   	};
 }
