@@ -45,6 +45,12 @@
     		 	pin = true; 
     			no_initial_focus = true; 
     		}
+    		{ 
+    		    			match.title = "Library";
+    		    		 	float = true; 
+    		    		 	pin = true; 
+    		    			no_initial_focus = true; 
+    		}
    			{
    				match = { 	
    					float = false;
