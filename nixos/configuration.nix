@@ -2,15 +2,10 @@
 { config, lib, pkgs, ... }:
 
 {
-	imports =
-	[
-		./hardware-configuration.nix  #hardware
-		./disko.nix  #disks
-		./modules/audio.nix
-		./modules/hyprland.nix
-		./modules/user.nix
-		./modules/zram.nix
-		./modules/tlp.nix
+	imports = [
+		./modules
+		./disko.nix
+		./hardware-configuration.nix
 	];
 
 	# EFI boot params
