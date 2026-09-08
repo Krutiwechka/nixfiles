@@ -29,7 +29,6 @@
     			float = true;
     			size = "1000 800";
     			move = "200 200";
-    			rounding = 10;
     		}
     		{
     			match.class = "Telegram";
@@ -46,10 +45,13 @@
     			no_initial_focus = true; 
     		}
     		{ 
-    		    			match.title = "Library";
-    		    		 	float = true; 
-    		    		 	pin = true; 
-    		    			no_initial_focus = true; 
+    		    match.title = "Library";
+    		    float = true; 
+    		    pin = true; 
+    		    no_initial_focus = true;
+    		   	size = "1000 800";
+    		   	move = "200 200";
+    		   	     			 
     		}
    			{
    				match = { 	
