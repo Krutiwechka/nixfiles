@@ -6,6 +6,7 @@
   	./appearance
   	./rofi
   	./vscodium
+  	./obsidian
     ./git.nix
     ./zsh.nix
     ./starship.nix

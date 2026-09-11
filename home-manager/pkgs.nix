@@ -27,7 +27,6 @@
 		#apps
 		telegram-desktop
 		tetrio-desktop
-		obsidian
 
 		qview
 		zathura
