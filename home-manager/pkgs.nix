@@ -4,7 +4,12 @@
 	home.packages = with pkgs; [
 
 		#workflow
-
+		#rust
+		rustc
+		cargo
+		rustfmt
+		clippy
+		rust-analyzer
 		#utils
 		wl-clipboard
 		brightnessctl
