@@ -10,6 +10,7 @@
 		rustfmt
 		clippy
 		rust-analyzer
+		gcc
 		#utils
 		wl-clipboard
 		brightnessctl

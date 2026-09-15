@@ -10,7 +10,7 @@
 		rust-lang.rust-analyzer
 		vadimcn.vscode-lldb
 		tamasfe.even-better-toml
-		serayuzgur.crates
+		fill-labs.dependi
 		usernamehw.errorlens
 	];
 }
