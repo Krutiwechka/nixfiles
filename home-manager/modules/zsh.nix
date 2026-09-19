@@ -20,6 +20,7 @@
     shellAliases = {
 		tg = "Telegram";
       	mc = "micro";
+		v = "nvim";
       	t = "trans";
       	tt = "trans :en";
 

@@ -25,9 +25,9 @@
 		udisks
 		ripgrep
 		fd
+		btop
 		#cli
 		micro
-		vim
 
 		cmatrix
 		#apps

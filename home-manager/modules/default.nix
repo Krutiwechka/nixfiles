@@ -7,6 +7,7 @@
   	./rofi
   	./vscodium
   	./obsidian
+  	./nixvim.nix
     ./git.nix
     ./zsh.nix
     ./starship.nix
