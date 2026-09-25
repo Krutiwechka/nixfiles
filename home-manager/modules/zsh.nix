@@ -18,27 +18,27 @@
 	
 	#aliases
     shellAliases = {
-		tg = "Telegram";
-      	mc = "micro";
-		v = "nvim";
-      	t = "trans";
-      	tt = "trans :en";
+	tg = "Telegram";
+	#mc = "micro";
+	v = "nvim";
+	t = "trans";
+	tt = "trans :en";
 
-      	shut = "shutdown now";
-		hib = "sudo systemctl hibernate";
-      	newyear = "bash ~/Downloads/hy.sh";
-		cdd = "cd ${config.home.homeDirectory}/.dotfiles";
-		pkgs = "micro ${config.home.homeDirectory}/.dotfiles/home-manager/pkgs.nix";
-        gs = "git status";
-        ga = "git add";
-        gc = "git commit";
-        gp = "git push";
+	shut = "shutdown now";
+	hib = "sudo systemctl hibernate";
+	newyear = "bash ~/Downloads/hy.sh";
+	cdd = "cd ${config.home.homeDirectory}/.dotfiles";
+	pkgs = "nvim ${config.home.homeDirectory}/.dotfiles/home-manager/pkgs.nix";
+	gs = "git status";
+	ga = "git add";
+	gc = "git commit";
+	gp = "git push";
 
-		cat = "bat";
-		find = "fd";
-
-        ".." = "cd ..";
-      };
+	cat = "bat";
+	find = "fd";
+	
+	".." = "cd ..";
+	};
 		initContent = ''
 		  #fastfetch
 		  ${pkgs.fastfetch}/bin/fastfetch
