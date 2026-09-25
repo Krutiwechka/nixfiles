@@ -17,5 +17,6 @@
     ./networkmanager-dmenu.nix
     ./zen.nix
     ./cli.nix
+    ./cliphist.nix
   ];
 }
