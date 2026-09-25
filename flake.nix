@@ -16,9 +16,14 @@
     	      url = "github:nix-community/disko";
     	      inputs.nixpkgs.follows = "nixpkgs";
     	};
+    	nixvim = {
+    		url = "github:nix-community/nixvim";
+    		inputs.nixpkgs.follows = "nixpkgs";
+    	};
+    	
 	};
 
-  	outputs = {self, nixpkgs, home-manager, disko,  ...}@inputs:
+  	outputs = {self, nixpkgs, home-manager, disko, nixvim,  ...}@inputs:
     	let 
     		system = "x86_64-linux";
 		in
@@ -34,7 +39,10 @@
 			};
 			homeConfigurations.timojj = home-manager.lib.homeManagerConfiguration {
 				pkgs = nixpkgs.legacyPackages.${system};
-				modules = [./home-manager/home.nix];
+				modules = [
+					nixvim.homeManagerModules.nixvim
+					./home-manager/home.nix
+				];
 				extraSpecialArgs = { inherit inputs; };
 			};				
 		};
