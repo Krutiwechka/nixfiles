@@ -2,7 +2,7 @@
 {
   programs.nixvim = {
     enable = true;
-
+    nixpkgs.source = pkgs.path;
     colorschemes.dracula.enable = true;
 
     globals.mapleader = " ";
