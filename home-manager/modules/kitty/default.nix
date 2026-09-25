@@ -41,8 +41,8 @@
 		    window_border_width = 0;
 		    draw_minimal_borders = true;
 		    single_window_margin_width = 0;
-		    window_padding_width  = 5;
-		    single_window_padding_width = 5;
+		    window_padding_width  = 0;
+		    single_window_padding_width = 0;
 		    hide_window_decorations = true;
 		
 		    window_logo_path  = toString ./pics/kafka_kitty.png;
