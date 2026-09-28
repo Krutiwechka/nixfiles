@@ -4,6 +4,8 @@
 	home.packages = with pkgs; [
 
 		#workflow
+		wineWow64Packages.stable
+		winetricks
 		#rust
 		rustc
 		cargo
