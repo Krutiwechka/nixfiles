@@ -13,7 +13,7 @@
     ./starship.nix
     ./mako.nix
     ./fastfetch.nix
-    ./garbage-collector.nix
+		#    ./garbage-collector.nix
     ./networkmanager-dmenu.nix
     ./zen.nix
     ./cli.nix
