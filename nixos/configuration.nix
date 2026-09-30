@@ -49,7 +49,6 @@
 	# thunar
 	programs.thunar.enable = true;
 	# uswm
-	
 	# sddm
 	services.displayManager = {
 	   sddm = {
