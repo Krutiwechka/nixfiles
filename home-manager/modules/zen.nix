@@ -32,7 +32,11 @@ let
 
     #cookies
     "network.cookie.cookieBehavior" = 5;
-    
+    # встроенный менеджер паролей
+	"signon.rememberSignons" = false;
+	"signon.autofillForms" = false;
+	"signon.generation.enabled" = false;
+	"signon.management.page.breach-alerts.enabled" = false;
 	#theme
     "zen.view.window.scheme" = 0;
     "layout.css.prefers-color-scheme.content-override" = 0;
@@ -65,6 +69,7 @@ let
     (extension "privacy-badger17" "jid1-MnnxcxisBPnSXQ@jetpack")
     (extension "sponsorblock" "sponsorBlocker@ajay.app")
     (extension "veepn-free-fast-security-vpn" "{94ed9bbf-a1e2-4e58-81ae-cd16dad818d8}")
+    (extension "bitwarden-password-manager" "{446900e4-71c2-419f-a6a7-df9c091e268b}")
   ];
 
 in
@@ -82,7 +87,8 @@ in
         extraPolicies = {
           DisableTelemetry = true;
           DisablePocket = true;
-
+PasswordManagerEnabled = false;
+OfferToSaveLogins = false;
           DisableAppUpdate = true;
 
           ExtensionSettings = builtins.listToAttrs extensions;

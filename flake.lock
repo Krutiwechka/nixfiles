@@ -20,6 +20,22 @@
         "type": "github"
       }
     },
+    "dracula-spicetify": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1686408913,
+        "narHash": "sha256-/5ikaxHIAxODEOJkPKFbA80fxYtPQzN0gXGg7S4RYQA=",
+        "owner": "dracula",
+        "repo": "spicetify",
+        "rev": "63b2e835d8079d840277defa53651f65deee7d0c",
+        "type": "github"
+      },
+      "original": {
+        "owner": "dracula",
+        "repo": "spicetify",
+        "type": "github"
+      }
+    },
     "flake-parts": {
       "inputs": {
         "nixpkgs-lib": [
@@ -102,10 +118,33 @@
     "root": {
       "inputs": {
         "disko": "disko",
+        "dracula-spicetify": "dracula-spicetify",
         "home-manager": "home-manager",
         "nixpkgs": "nixpkgs",
         "nixvim": "nixvim",
+        "spicetify-nix": "spicetify-nix",
         "zen-browser": "zen-browser"
+      }
+    },
+    "spicetify-nix": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "systems": "systems_2"
+      },
+      "locked": {
+        "lastModified": 1790502898,
+        "narHash": "sha256-eR6P8ZCyYqrdvuOANIOE78t4qqm6wSTBKLP/aW8nwJE=",
+        "owner": "Gerg-L",
+        "repo": "spicetify-nix",
+        "rev": "d508ccfa23820d032589bd65345bf5b6d9ea842f",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Gerg-L",
+        "repo": "spicetify-nix",
+        "type": "github"
       }
     },
     "systems": {
@@ -121,6 +160,21 @@
       "original": {
         "owner": "nix-systems",
         "ref": "future-26.11",
+        "repo": "default",
+        "type": "github"
+      }
+    },
+    "systems_2": {
+      "locked": {
+        "lastModified": 1681028828,
+        "narHash": "sha256-Vy1rq5AaRuLzOxct8nz4T6wlgyUR7zLU309k9mBC768=",
+        "owner": "nix-systems",
+        "repo": "default",
+        "rev": "da67096a3b9bf56a91d16901293e51ba5b49a27e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nix-systems",
         "repo": "default",
         "type": "github"
       }
