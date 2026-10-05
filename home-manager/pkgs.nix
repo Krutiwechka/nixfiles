@@ -40,6 +40,7 @@
 		zathura
 		vlc
 		foliate
+		gimp
 		onlyoffice-desktopeditors
 		#font
 		nerd-fonts.fira-code
