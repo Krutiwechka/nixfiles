@@ -69,10 +69,10 @@ programs.waybar.settings = {
 
     "network" = {
       format-wifi = " {essid} ({signalStrength}%)";
-      format-ethernet = "{ipaddr}/{cidr} ";
+      format-ethernet = "{ipaddr}/{cidr} 󰈀";
       tooltip-format = "{ifname} via {gwaddr}";
       format-linked = "{ifname} (No IP) ";
-      format-disconnected = "Disconnected ⚠";
+      format-disconnected = "Disconnected 󰱟";
       on-click = "${pkgs.networkmanager_dmenu}/bin/networkmanager_dmenu";
     };
 
@@ -84,8 +84,8 @@ programs.waybar.settings = {
       format-muted = "󰝟";
       format-icons = {
         headphone = "";
-        hands-free = "";
-        headset = "";
+        hands-free = "";
+        headset = "";
         phone = "";
         portable = "";
         car = "";
