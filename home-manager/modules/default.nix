@@ -8,7 +8,6 @@
   	./vscodium
   	./obsidian
   	./nixvim.nix
-    ./steam.nix
     ./git.nix
     ./zsh.nix
     ./starship.nix
