@@ -53,6 +53,13 @@
     		   	move = "200 200";
     		   	     			 
     		}
+		{
+			match.title = ".*Bitwarden.*";
+			float = true;
+			pin = true;
+			size = "500 400";
+			move = "200 200";
+		}
    			{
    				match = { 	
    					float = false;
