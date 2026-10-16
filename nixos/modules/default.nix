@@ -7,6 +7,5 @@
 		./zram.nix
 		./tlp.nix
 		./docker.nix
-		./steam.nix
 	];
 }
