@@ -31,11 +31,11 @@
     			move = "200 200";
     		}
     		{
-    			match.class = "Telegram";
+    			match.class = "org.telegram.desktop";
     			workspace = "5";
     		}
     		{
-    		    match.class = "Obsidian";
+    		    match.class = "md.Obsidian";
     		   	workspace = "4";
     		}
     		{ 
@@ -53,13 +53,7 @@
     		   	move = "200 200";
     		   	     			 
     		}
-		{
-			match.title = ".*Bitwarden.*";
-			float = true;
-			pin = true;
-			size = "500 400";
-			move = "200 200";
-		}
+		
    			{
    				match = { 	
    					float = false;
@@ -89,7 +83,24 @@
     	            end
     	          '')
     	  ];
+	
     	 }
+	  {
+    _args = [
+      "window.title"
+      (lib.generators.mkLuaInline ''
+        function(w)
+          if not w.floating
+             and string.find(w.title, "Extension: (Bitwarden Password Manager)", 1, true) then
+            hl.dispatch(hl.dsp.window.float({ action = "set", window = w }))
+            hl.dispatch(hl.dsp.window.resize({ x = 500, y = 400, window = w }))
+            hl.dispatch(hl.dsp.window.center({ window = w }))
+            hl.dispatch(hl.dsp.window.pin({ action = "set", window = w }))
+          end
+        end
+      '')
+    ];
+  }
     	];
   	};
 }
