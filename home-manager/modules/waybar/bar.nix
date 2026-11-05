@@ -10,7 +10,7 @@
 			spacing = 0;
 			modules-left = [
 				"hyprland/workspaces"
-				"hyprland/window"
+				"mpris"
 			];
 			modules-center = [
 				"group/info"

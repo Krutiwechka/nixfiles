@@ -106,9 +106,11 @@ programs.waybar.settings = {
       show-passive-icons = true;
     };
 
-    "hyprland/window" = {
-      format = "{}";
-      max-length = 60;
+    "mpris" = {
+      format = "󰎈 {dynamic}";
+      "tooltip-format" = "{player}: {artist} — {title}";
+      max-length = 45;
+      on-click = "playerctl play-pause";
     };
 
     "custom/divider1" = {
