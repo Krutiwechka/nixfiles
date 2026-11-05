@@ -109,7 +109,7 @@ programs.waybar.settings = {
     "mpris" = {
       format = "󰎈 {dynamic}";
       "tooltip-format" = "{player}: {artist} — {title}";
-      max-length = 45;
+      max-length = 75;
       on-click = "playerctl play-pause";
     };
 

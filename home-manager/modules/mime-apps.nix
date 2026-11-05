@@ -16,7 +16,7 @@
 			"application/json" = [ "nvim.desktop" ];
 			"text/x-shellscript" = [ "nvim.desktop" ];
 
-			"application/pdf" = [ "org.pwmt.zathura.desktop" ];
+			"application/pdf" = [ "zen.desktop" ];
 			"application/epub+zip" = [ "com.github.johnfactotum.Foliate.desktop" ];
 
 			"image/png" = [ "com.interversehq.qView.desktop" ];
@@ -35,8 +35,7 @@
 		};
 
 		associations.added = {
-			"application/pdf" = [ "com.github.johnfactotum.Foliate.desktop" "zen.desktop" ];
-			"application/epub+zip" = [ "org.pwmt.zathura-pdf-mupdf.desktop" ];
+			"application/pdf" = [ "com.github.johnfactotum.Foliate.desktop" ];
 			"text/html" = [ "zen.desktop" ];
 		};
 	};
