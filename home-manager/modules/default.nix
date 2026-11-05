@@ -20,5 +20,9 @@
     ./cli.nix
     ./cliphist.nix
     ./battery.nix
+    ./mime-apps.nix
+    ./btop.nix
+    ./zathura.nix
+    ./polkit-agent.nix
   ];
 }

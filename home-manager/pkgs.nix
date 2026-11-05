@@ -27,9 +27,6 @@
 		udisks
 		ripgrep
 		fd
-		btop
-		#cli
-		micro
 
 		cmatrix
 		#apps
@@ -38,7 +35,6 @@
 		pavucontrol
 
 		qview
-		zathura
 		vlc
 		foliate
 		gimp

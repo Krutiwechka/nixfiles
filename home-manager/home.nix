@@ -9,7 +9,7 @@
 	home.homeDirectory = "/home/timojj";
 	home.stateVersion = "26.05";
 	home.sessionVariables = {
-	  # EDITOR = "emacs";
+	  EDITOR = "nvim";
 	};
 	programs.home-manager.enable = true;
 }

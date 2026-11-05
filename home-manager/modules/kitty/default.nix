@@ -58,7 +58,7 @@
 	        tab_activity_symbol = "*";
 	    
 	    	kitty_mod = "ctrl+shift";
-	        editor = "micro";
+	        editor = "nvim";
 		};	
 			
 		keybindings = {

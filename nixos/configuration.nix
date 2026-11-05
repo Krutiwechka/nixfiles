@@ -37,8 +37,6 @@
 	#CUPS
 	services.printing.enable = true;
 
-		#services.flatpak.enable = true;  
-
 	# GNOME virtual file system
 	services.gvfs.enable = true;
 
