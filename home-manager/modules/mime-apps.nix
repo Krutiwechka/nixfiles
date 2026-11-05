@@ -27,6 +27,17 @@
 			"video/mp4" = [ "vlc.desktop" ];
 			"video/x-matroska" = [ "vlc.desktop" ];
 			"video/webm" = [ "vlc.desktop" ];
+
+			# migrated from ~/.config/mimeapps.list
+			"x-scheme-handler/tg" = [ "org.telegram.desktop.desktop" ];
+			"x-scheme-handler/tonsite" = [ "org.telegram.desktop.desktop" ];
+			"x-scheme-handler/zcode" = [ "zcode.desktop" ];
+		};
+
+		associations.added = {
+			"application/pdf" = [ "com.github.johnfactotum.Foliate.desktop" "zen.desktop" ];
+			"application/epub+zip" = [ "org.pwmt.zathura-pdf-mupdf.desktop" ];
+			"text/html" = [ "zen.desktop" ];
 		};
 	};
 }
