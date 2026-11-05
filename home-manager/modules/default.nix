@@ -19,5 +19,6 @@
     ./zen.nix
     ./cli.nix
     ./cliphist.nix
+    ./battery.nix
   ];
 }

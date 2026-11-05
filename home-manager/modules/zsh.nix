@@ -21,8 +21,6 @@
 	tg = "Telegram";
 	#mc = "micro";
 	v = "nvim";
-	t = "trans";
-	tt = "trans :en";
 
 	shut = "shutdown now";
 	hib = "sudo systemctl hibernate";
@@ -40,8 +38,11 @@
 	".." = "cd ..";
 	};
 		initContent = ''
-		  #fastfetch
-		  ${pkgs.fastfetch}/bin/fastfetch
+		  #fastfetch once per session
+		  if [ -n "$XDG_SESSION_ID" ] && [ ! -e "/tmp/.fastfetch-$XDG_SESSION_ID" ]; then
+		    touch "/tmp/.fastfetch-$XDG_SESSION_ID"
+		    ${pkgs.fastfetch}/bin/fastfetch
+		  fi
 
 		  eval "$(${pkgs.starship}/bin/starship init zsh)"
 

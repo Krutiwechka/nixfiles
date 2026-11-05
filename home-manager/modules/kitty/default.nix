@@ -57,8 +57,6 @@
 	        tab_powerline_style = "slanted";
 	        tab_activity_symbol = "*";
 	    
-	        selection_foreground = "#0D0726";
-	        selection_background = "#EDECF7";
 	    	kitty_mod = "ctrl+shift";
 	        editor = "micro";
 		};	

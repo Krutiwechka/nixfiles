@@ -14,15 +14,15 @@
 		rust-analyzer
 		gcc
 		#utils
-		wl-clipboard
 		brightnessctl
 		cliphist
+		playerctl
+		libnotify
 		xclip
 		tree
 		zip
 		unzip
 		wget
-		bottom
 		ntfs3g
 		udisks
 		ripgrep
@@ -35,6 +35,7 @@
 		#apps
 		telegram-desktop
 		tetrio-desktop
+		pavucontrol
 
 		qview
 		zathura

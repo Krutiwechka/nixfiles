@@ -36,7 +36,6 @@
 				modules = [
 					"backlight"
 	                "pulseaudio"
-	                "power-profiles-daemon"
 	                "battery"
 				];
 			};

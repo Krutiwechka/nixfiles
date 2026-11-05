@@ -31,7 +31,6 @@
 	# system pkgs
 	environment.systemPackages = with pkgs; [
 	   curl
-	   zsh
 	];
 
 ### SERVICES

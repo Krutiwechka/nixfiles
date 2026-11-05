@@ -38,7 +38,7 @@
 
         # 30min
         {
-          timeout = 1200;
+          timeout = 1800;
           on-timeout = "systemctl suspend";                # suspend pc
         }
       ];
