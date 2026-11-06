@@ -2,15 +2,15 @@
   programs.rofi = {
     enable = true;
 
-    modes = [ "drun" "filebrowser" "run" "ssh" ];
-    font = "FiraCode Mono Medium 12";
-    location = "center";     
-    xoffset = 0;
-    yoffset = 0;
-    terminal = "kitty";
-    cycle = true;
+    settings = {
+      modes = [ "drun" "filebrowser" "run" "ssh" ];
+      font = "FiraCode Mono Medium 12";
+      location = 0; # center
+      xoffset = 0;
+      yoffset = 0;
+      terminal = "kitty";
+      cycle = true;
 
-    extraConfig = {
       fixed-num-lines = true;
       show-icons = true;
       run-shell-command = "{terminal} -e zsh -ic '{cmd} && read'";

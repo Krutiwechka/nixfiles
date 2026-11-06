@@ -4,6 +4,7 @@ let
   mainMod = "SUPER";
   terminal = "kitty";
   fileManager = "thunar";
+  yazi = "kitty --class yazi yazi";
   menu = "rofi -show drun";
 
   screenshotScript = pkgs.writeShellScript "hypr-screenshot" ''
@@ -45,7 +46,8 @@ in
       { _args = [ "${mainMod} + T" (lib.generators.mkLuaInline "hl.dsp.exec_cmd(\"${terminal}\")") ]; }
       { _args = [ "${mainMod} + Q" (lib.generators.mkLuaInline "hl.dsp.window.close()") ]; }
       { _args = [ "${mainMod} + M" (lib.generators.mkLuaInline "hl.dsp.exit()") ]; }
-      { _args = [ "${mainMod} + E" (lib.generators.mkLuaInline "hl.dsp.exec_cmd(\"${fileManager}\")") ]; }
+      { _args = [ "${mainMod} + E" (lib.generators.mkLuaInline "hl.dsp.exec_cmd(\"${yazi}\")") ]; }
+      { _args = [ "${mainMod} + SHIFT + E" (lib.generators.mkLuaInline "hl.dsp.exec_cmd(\"${fileManager}\")") ]; }
       { _args = [ "${mainMod} + K" (lib.generators.mkLuaInline "hl.dsp.window.float({ action = \"toggle\" })") ]; }
       { _args = [ "${mainMod} + Y" (lib.generators.mkLuaInline "hl.dsp.window.pin()") ]; }
       { _args = [ "${mainMod} + F" (lib.generators.mkLuaInline "hl.dsp.window.fullscreen(1)") ]; }

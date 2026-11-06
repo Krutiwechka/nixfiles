@@ -23,5 +23,6 @@
     ./mime-apps.nix
     ./btop.nix
     ./polkit-agent.nix
+    ./yazi.nix
   ];
 }

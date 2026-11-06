@@ -95,3 +95,8 @@ tooltip label {
 	background: @light5;
 	color: @dark2;}
 
+#mpris:hover{
+	background-color: transparent;
+	background-image: none;
+}
+

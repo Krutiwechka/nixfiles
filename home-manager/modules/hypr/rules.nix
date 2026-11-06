@@ -28,10 +28,16 @@
     			match.modal = true;
     			float = true;
     			size = "1000 800";
-    			move = "200 200";
-    		}
-    		{
-    			match.class = "org.telegram.desktop";
+	    	  			move = "200 200";
+	    	  		}
+	    	  		{
+	    	  			match.class = "^(xdg-desktop-portal-gtk|pavucontrol|nm-connection-editor)$";
+	    	  			float = true;
+	    	  			size = "1000 800";
+	    	  			move = "200 200";
+	    	  		}
+	    	  		{
+	    	  			match.class = "org.telegram.desktop";
     			workspace = "5";
     		}
     		{
@@ -75,7 +81,7 @@
     	          "window.open"
     	          (lib.generators.mkLuaInline ''
     	            function(w)
-    	              if w.class == "thunar" or w.class == "Thunar" then
+    	              if w.class == "yazi" or w.class == "thunar" or w.class == "Thunar" then
     	                hl.dispatch(hl.dsp.window.float({ action = "set", window = w }))
     	                hl.dispatch(hl.dsp.window.resize({ x = 1000, y = 800, window = w }))
     	                hl.dispatch(hl.dsp.window.center({ window = w }))

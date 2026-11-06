@@ -29,6 +29,11 @@
       url = "github:dracula/spicetify";
       flake = false;
     };
+
+    dracula-obsidian = {
+      url = "github:dracula/obsidian";
+      flake = false;
+    };
   };
 
   outputs = { self, nixpkgs, home-manager, disko, nixvim, ... }@inputs:

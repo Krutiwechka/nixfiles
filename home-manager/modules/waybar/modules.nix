@@ -108,21 +108,26 @@ programs.waybar.settings = {
 
     "mpris" = {
       format = "󰎈 {dynamic}";
-      "tooltip-format" = "{player}: {artist} — {title}";
+      "dynamic-order" = [ "title" "artist" "position" "length" ];
       max-length = 75;
+      interval = 1;
+      tooltip = false;
       on-click = "playerctl play-pause";
     };
 
     "custom/divider1" = {
       format = "";
+      tooltip = false;
     };
 
     "custom/divider2" = {
       format = "";
+      tooltip = false;
     };
 
     "custom/divider3" = {
       format = "";
+      tooltip = false;
     };
   };
 };
