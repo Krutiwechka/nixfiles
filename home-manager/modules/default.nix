@@ -24,5 +24,6 @@
     ./btop.nix
     ./polkit-agent.nix
     ./yazi.nix
+    ./foliate.nix
   ];
 }
