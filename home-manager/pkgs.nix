@@ -36,7 +36,6 @@
 
 		qview
 		vlc
-		foliate
 		gimp
 		onlyoffice-desktopeditors
 		#font

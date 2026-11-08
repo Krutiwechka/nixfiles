@@ -38,6 +38,8 @@
 	".." = "cd ..";
 	};
 		initContent = ''
+		  bindkey -e
+
 		  #fastfetch once per session
 		  if [ -n "$XDG_SESSION_ID" ] && [ ! -e "/tmp/.fastfetch-$XDG_SESSION_ID" ]; then
 		    touch "/tmp/.fastfetch-$XDG_SESSION_ID"
@@ -51,7 +53,7 @@
 		  TRANSIENT_PROMPT="''${PROMPT// prompt / prompt --profile transient }"
 		  TRANSIENT_RPROMPT="''${PROMPT// prompt / prompt --profile rtransient }"
 		  function transient-prompt-precmd {
-		      TRAPINT() { transient-prompt; return $(( 128 + $1 )) }
+		      TRAPINT() { [[ -n $ZLE_STATE ]] && transient-prompt; return $(( 128 + $1 )) }
 		      SAVED_PROMPT="$(eval "printf '%s' \"''${TRANSIENT_PROMPT}\"")"
 		      SAVED_RPROMPT="$(eval "printf '%s' \"''${TRANSIENT_RPROMPT}\"")"
 		  }
