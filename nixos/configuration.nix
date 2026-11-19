@@ -12,8 +12,8 @@
 	boot.loader.systemd-boot.enable = true;
 	boot.loader.efi.canTouchEfiVariables = true;
 
-	# ryzen brightness fix
-	boot.kernelParams = [ "acpi_backlight=native" "amdgpu.dcdebugmask=0x40000"]; #fixed in 7.1.9 kernel version so its temporary
+	# ryzen brightness fix; abmlevel=0 disables adaptive backlight (washed-out oversaturated colors on battery)
+	boot.kernelParams = [ "acpi_backlight=native" "amdgpu.dcdebugmask=0x40000" "amdgpu.abmlevel=0"]; #fixed in 7.1.9 kernel version so its temporary
 
 	# hostname
 	networking.hostName = "nixos";

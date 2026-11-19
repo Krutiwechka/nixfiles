@@ -5,12 +5,13 @@
 		enable = true;
 		enableZshIntegration = true;
 
-		# detach the generic opener from the session so apps opened via Enter
-		# survive yazi exit and terminal close
+		# xdg-open itself doesn't wait for the GUI app it forks, so yazi
+		# closes the pipe and the app exits; orphan = true redirects
+		# stdout/stderr to /dev/null (the same fix as upstream PR #3581)
 		settings.opener.open = [
 			{
-				run = "setsid xdg-open \"$@\"";
-				desc = "Open";
+				run = "xdg-open %s1"; 
+ 				desc = "Open";
 				orphan = true;
 				for = "unix";
 			}
