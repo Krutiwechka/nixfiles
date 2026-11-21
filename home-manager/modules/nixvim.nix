@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ pkgs, inputs, ... }:
 {
   programs.nixvim = {
     enable = true;
@@ -36,10 +36,13 @@
       crates-nvim
       nvim-dap-ui
       nvim-nio
-    ];
+    ] ++ [ inputs.nvimcord ];
     extraConfigLua = ''
       require('crates').setup()
       require('dapui').setup()
+      require('nvimcord').setup({
+        autostart = true,
+      })
     '';
 
     plugins.treesitter = {

@@ -34,6 +34,11 @@
       url = "github:dracula/obsidian";
       flake = false;
     };
+
+    nvimcord = {
+      url = "github:ObserverOfTime/nvimcord";
+      flake = false;
+    };
   };
 
   outputs = { self, nixpkgs, home-manager, disko, nixvim, ... }@inputs:

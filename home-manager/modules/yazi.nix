@@ -10,8 +10,8 @@
 		# stdout/stderr to /dev/null (the same fix as upstream PR #3581)
 		settings.opener.open = [
 			{
-				run = "xdg-open %s1"; 
- 				desc = "Open";
+				run = "xdg-open %s1";
+				desc = "Open";
 				orphan = true;
 				for = "unix";
 			}
@@ -27,4 +27,15 @@
 			{ on = "S"; run = "search --via=rg"; desc = "Search file contents (ripgrep)"; }
 		];
 	};
+
+	# "open containing folder" from GUI apps → yazi in kitty instead of thunar
+	xdg.desktopEntries.yazi-picker = {
+		name = "Yazi";
+		exec = "kitty --class yazi-picker yazi %f";
+		icon = "yazi";
+		categories = [ "System" "FileManager" ];
+		mimeType = [ "inode/directory" ];
+	};
+
+	xdg.mimeApps.defaultApplications."inode/directory" = [ "yazi-picker.desktop" ];
 }

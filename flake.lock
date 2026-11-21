@@ -131,6 +131,22 @@
         "type": "github"
       }
     },
+    "nvimcord": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1773925393,
+        "narHash": "sha256-QhpDNkdtoQjgmui9oF0T1FPHQPbFxZXd2D5t7XEti8o=",
+        "owner": "ObserverOfTime",
+        "repo": "nvimcord",
+        "rev": "60de22ac06565fa5378ea7d43b7ddc4e174dfa3f",
+        "type": "github"
+      },
+      "original": {
+        "owner": "ObserverOfTime",
+        "repo": "nvimcord",
+        "type": "github"
+      }
+    },
     "root": {
       "inputs": {
         "disko": "disko",
@@ -139,6 +155,7 @@
         "home-manager": "home-manager",
         "nixpkgs": "nixpkgs",
         "nixvim": "nixvim",
+        "nvimcord": "nvimcord",
         "spicetify-nix": "spicetify-nix",
         "zen-browser": "zen-browser"
       }

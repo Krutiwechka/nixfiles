@@ -25,5 +25,6 @@
     ./polkit-agent.nix
     ./yazi.nix
     ./foliate.nix
+    ./discord.nix
   ];
 }
