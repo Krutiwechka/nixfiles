@@ -36,7 +36,13 @@
       crates-nvim
       nvim-dap-ui
       nvim-nio
-    ] ++ [ inputs.nvimcord ];
+    ] ++ [
+      (pkgs.vimUtils.buildVimPlugin {
+        pname = "nvimcord";
+        version = "unstable";
+        src = inputs.nvimcord;
+      })
+    ];
     extraConfigLua = ''
       require('crates').setup()
       require('dapui').setup()
