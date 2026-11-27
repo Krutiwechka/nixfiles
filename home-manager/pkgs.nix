@@ -40,5 +40,6 @@
 		onlyoffice-desktopeditors
 		#font
 		nerd-fonts.fira-code
+		corefonts
 	];
 }
